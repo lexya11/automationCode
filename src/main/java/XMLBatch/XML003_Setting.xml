@@ -1,0 +1,16 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name = "Regression test Suite">
+    <test name = "XML002_Setting">
+        <classes>
+            <class name = "TestCases.TS004_SettingsScripts01"/>
+            <class name = "TestCases.TS004_SettingsScripts02"/>
+            <class name = "TestCases.TS004_SettingsScripts03"/>
+            <class name = "TestCases.TS004_SettingsScripts04"/>
+            <class name = "TestCases.TS004_SettingsScripts05"/>
+            <class name = "TestCases.TS004_SettingsScripts07"/>
+            <class name = "TestCasesManual.SendEmailScripts"/>
+        </classes>
+    </test>
+</suite>

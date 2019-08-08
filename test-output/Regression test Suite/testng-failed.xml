@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Regression test Suite]" guice-stage="DEVELOPMENT">
+  <test name="Regression test(failed)">
+    <classes>
+      <class name="TestCases.TS010_CollectionScripts03">
+        <methods>
+          <include name="TS010_CollectionScripts03_Collection6_deleteToDoBySwipe"/>
+          <include name="TS010_CollectionScripts03_Collection5_addToDoToCollectionBySwipe"/>
+          <include name="TS010_CollectionScripts03_Collection3_addDueForToDoBySwipe"/>
+          <include name="TS010_CollectionScripts03_Collection1_addEmailLinkedToDoBySwipe"/>
+          <include name="SetUp"/>
+          <include name="TS010_CollectionScripts03_Collection4_MoveToDoToCollectionBySwipe"/>
+          <include name="TS010_CollectionScripts03_Collection2_addNoteLinkedToDoBySwipe"/>
+          <include name="sendMail"/>
+          <include name="clearUp"/>
+        </methods>
+      </class> <!-- TestCases.TS010_CollectionScripts03 -->
+      <class name="TestCases.TS010_CollectionScripts04">
+        <methods>
+          <include name="TS010_CollectionScripts04_Collection3_moveContactToCollectionBySwipe"/>
+          <include name="TS010_CollectionScripts04_Collection2_createNewEventBySwipeOnContact"/>
+          <include name="Setup"/>
+          <include name="TS010_CollectionScripts04_Collection1_sendAnEmailBySwipeOnContact"/>
+          <include name="sendMail"/>
+          <include name="clearUp"/>
+        </methods>
+      </class> <!-- TestCases.TS010_CollectionScripts04 -->
+      <class name="TestCases.TS005_EmailScripts04">
+        <methods>
+          <include name="clearUp"/>
+          <include name="TS005_EmailScripts04_Email2_updateEmailListAfterDeleteContact"/>
+          <include name="TS005_EmailScripts04_Email5_addToExistingContactFromDetail"/>
+          <include name="SetUp"/>
+          <include name="sendMail"/>
+          <include name="TS005_EmailScripts04_Email3_createNewContactFromDetail"/>
+          <include name="TS005_EmailScripts04_Email4_createNewVIPContactFromDetail"/>
+        </methods>
+      </class> <!-- TestCases.TS005_EmailScripts04 -->
+      <class name="TestCases.TS005_EmailScripts05">
+        <methods>
+          <include name="sendMail"/>
+          <include name="SetUp"/>
+          <include name="TS005_EmailScripts05_Email07_searchEmailByTo"/>
+          <include name="TS005_EmailScripts05_Email05_searchEmailBySubject"/>
+          <include name="TS005_EmailScripts05_Email02_setUnStarForEmailFromEmailList"/>
+          <include name="TS005_EmailScripts05_Email06_searchEmailByBody"/>
+          <include name="clearUp"/>
+        </methods>
+      </class> <!-- TestCases.TS005_EmailScripts05 -->
+      <class name="TestCases.TS005_EmailScripts02">
+        <methods>
+          <include name="TS005_EmailScripts02_Email1_replyEmailBySwipe"/>
+          <include name="clearUp"/>
+          <include name="SetUp"/>
+          <include name="sendMail"/>
+        </methods>
+      </class> <!-- TestCases.TS005_EmailScripts02 -->
+      <class name="TestCases.TS005_EmailScripts06">
+        <methods>
+          <include name="sendMail"/>
+          <include name="TS005_EmailScripts06_Email4_createNewEventInDetail"/>
+          <include name="TS005_EmailScripts06_Email3_forwardEmailInDetail"/>
+          <include name="TS005_EmailScripts06_Email1_replyEmailInDetail"/>
+          <include name="SetUp"/>
+          <include name="TS005_EmailScripts06_Email2_replyAllEmailInDetail"/>
+          <include name="TS005_EmailScripts06_Email5_createNewTodoInDetail"/>
+          <include name="clearUp"/>
+          <include name="TS005_EmailScripts06_Email0_moveEmailToOtherFolderInDetail"/>
+        </methods>
+      </class> <!-- TestCases.TS005_EmailScripts06 -->
+      <class name="TestCases.TS010_CollectionScripts05">
+        <methods>
+          <include name="TS010_CollectionScripts05_Collection1_sendEmailBySwipeOnNote"/>
+          <include name="clearUp"/>
+          <include name="SetUp"/>
+          <include name="sendMail"/>
+        </methods>
+      </class> <!-- TestCases.TS010_CollectionScripts05 -->
+      <class name="TestCases.TS002_SignUpScripts01">
+        <methods>
+          <include name="setUp"/>
+          <include name="TS002_SignUpScripts01_SignUp2_CheckErrorMessage"/>
+          <include name="cleanUp"/>
+          <include name="sendMail"/>
+        </methods>
+      </class> <!-- TestCases.TS002_SignUpScripts01 -->
+      <class name="TestCases.TS007_TodoScripts04">
+        <methods>
+          <include name="Setup"/>
+          <include name="TS007_TodoScripts04_ToDo01_createEmailBySwiping"/>
+          <include name="TS007_TodoScripts04_ToDo04_addCollectionBySwiping"/>
+          <include name="clearUp"/>
+          <include name="sendMail"/>
+        </methods>
+      </class> <!-- TestCases.TS007_TodoScripts04 -->
+    </classes>
+  </test> <!-- Regression test(failed) -->
+</suite> <!-- Failed suite [Regression test Suite] -->

@@ -1,0 +1,370 @@
+<html>
+<head>
+<title>TestNG:  XML007_Contact</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>XML007_Contact</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>41/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Thu Jan 24 10:49:28 ICT 2019</td>
+</tr>
+<tr><td>Total time:</td><td>6022 seconds (6022702 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='TestCases.TS008_ContactScripts01.clearUp()'><b>clearUp</b><br>Test class: TestCases.TS008_ContactScripts01</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: Error Domain=com.facebook.WebDriverAgent Code=1 &quot;The element &apos;&quot;Trash&quot; TextField&apos; is not visible on the screen and thus is not interactable&quot; UserInfo={NSLocalizedDescription=The element &apos;&quot;Trash&quot; TextField&apos; is not visible on the screen and thus is not interactable}
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;Bis-Mac-mini.local&apos;, ip: &apos;192.168.1.63&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.13.6&apos;, java.version: &apos;10.0.2&apos;
+Driver info: io.appium.java_client.ios.IOSDriver
+Capabilities {app: /Users/Bi_DATA/FileFloApp/F..., automationName: XCUITest, browserName: , databaseEnabled: false, deviceName: iPhone 6s, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: false, newCommandTimeout: 4000, noReset: false, platform: MAC, platformName: iOS, platformVersion: 12.0, showXcodeLog: true, takesScreenshot: true, udid: 94D12BCB-9253-4B1A-B4CB-B2D..., webStorageEnabled: false}
+Session ID: 785a9cba-40b7-4273-8f81-c35ea7855a55
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:231)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.execute(IOSDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)
+	at io.appium.java_client.DefaultGenericMobileElement.execute(DefaultGenericMobileElement.java:45)
+	at io.appium.java_client.MobileElement.execute(MobileElement.java:1)
+	at io.appium.java_client.ios.IOSElement.execute(IOSElement.java:1)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
+	at Keywords.CollectionKeywords.emptyTrashCollection(CollectionKeywords.java:688)
+	at TestCases.TS008_ContactScripts01.clearUp(TS008_ContactScripts01.java:274)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1701798620", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1701798620'><pre>org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: Error Domain=com.facebook.WebDriverAgent Code=1 &quot;The element &apos;&quot;Trash&quot; TextField&apos; is not visible on the screen and thus is not interactable&quot; UserInfo={NSLocalizedDescription=The element &apos;&quot;Trash&quot; TextField&apos; is not visible on the screen and thus is not interactable}
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;Bis-Mac-mini.local&apos;, ip: &apos;192.168.1.63&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.13.6&apos;, java.version: &apos;10.0.2&apos;
+Driver info: io.appium.java_client.ios.IOSDriver
+Capabilities {app: /Users/Bi_DATA/FileFloApp/F..., automationName: XCUITest, browserName: , databaseEnabled: false, deviceName: iPhone 6s, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: false, newCommandTimeout: 4000, noReset: false, platform: MAC, platformName: iOS, platformVersion: 12.0, showXcodeLog: true, takesScreenshot: true, udid: 94D12BCB-9253-4B1A-B4CB-B2D..., webStorageEnabled: false}
+Session ID: 785a9cba-40b7-4273-8f81-c35ea7855a55
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:488)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:231)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.execute(IOSDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)
+	at io.appium.java_client.DefaultGenericMobileElement.execute(DefaultGenericMobileElement.java:45)
+	at io.appium.java_client.MobileElement.execute(MobileElement.java:1)
+	at io.appium.java_client.ios.IOSElement.execute(IOSElement.java:1)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
+	at Keywords.CollectionKeywords.emptyTrashCollection(CollectionKeywords.java:688)
+	at TestCases.TS008_ContactScripts01.clearUp(TS008_ContactScripts01.java:274)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:523)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:224)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeAfterClassMethods(TestMethodWorker.java:212)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:72)
+	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
+</pre></div></td>
+<td>47</td>
+<td>TestCases.TS008_ContactScripts01@11bd0f3b</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='TestCases.TS008_ContactScripts01.TS008_ContactScripts01_Contact1_verifyContactView()'><b>TS008_ContactScripts01_Contact1_verifyContactView</b><br>Test class: TestCases.TS008_ContactScripts01</td>
+<td></td>
+<td>33</td>
+<td>TestCases.TS008_ContactScripts01@11bd0f3b</td></tr>
+<tr>
+<td title='TestCases.TS008_ContactScripts01.TS008_ContactScripts01_Contact3_addContactFromPlusIcon()'><b>TS008_ContactScripts01_Contact3_addContactFromPlusIcon</b><br>Test class: TestCases.TS008_ContactScripts01</td>
+<td></td>
+<td>78</td>
+<td>TestCases.TS008_ContactScripts01@11bd0f3b</td></tr>
+<tr>
+<td title='TestCases.TS008_ContactScripts01.TS008_ContactScripts01_Contact5_filterByRecentAddNewContact()'><b>TS008_ContactScripts01_Contact5_filterByRecentAddNewContact</b><br>Test class: TestCases.TS008_ContactScripts01</td>
+<td></td>
+<td>181</td>
+<td>TestCases.TS008_ContactScripts01@11bd0f3b</td></tr>
+<tr>
+<td title='TestCases.TS008_ContactScripts01.TS008_ContactScripts01_Contact6_filterByVIPAddNewContact()'><b>TS008_ContactScripts01_Contact6_filterByVIPAddNewContact</b><br>Test class: TestCases.TS008_ContactScripts01</td>
+<td></td>
+<td>179</td>
+<td>TestCases.TS008_ContactScripts01@11bd0f3b</td></tr>
+<tr>
+<td title='TestCases.TS008_ContactScripts01.TS008_ContactScripts01_Contact7_filterByAllCheckAndDeleteContact()'><b>TS008_ContactScripts01_Contact7_filterByAllCheckAndDeleteContact</b><br>Test class: TestCases.TS008_ContactScripts01<br>Parameters: Check Contact B and delete in Detail, All Collections, 3.0, Contact, Scripts01_B, Company2, 456.0, khuong001@123flo.com, FALSE</td>
+<td></td>
+<td>96</td>
+<td>TestCases.TS008_ContactScripts01@11bd0f3b</td></tr>
+<tr>
+<td title='TestCases.TS008_ContactScripts01.TS008_ContactScripts01_Contact7_filterByAllCheckAndDeleteContact()'><b>TS008_ContactScripts01_Contact7_filterByAllCheckAndDeleteContact</b><br>Test class: TestCases.TS008_ContactScripts01<br>Parameters: Check Contact D and delete in Detail, All Collections, 2.0, Contact, Scripts01_D, Company4, 91011.0, khuong002@123flo.com, FALSE</td>
+<td></td>
+<td>111</td>
+<td>TestCases.TS008_ContactScripts01@11bd0f3b</td></tr>
+<tr>
+<td title='TestCases.TS008_ContactScripts01.TS008_ContactScripts01_Contact8_changeDisplayInSettings()'><b>TS008_ContactScripts01_Contact8_changeDisplayInSettings</b><br>Test class: TestCases.TS008_ContactScripts01<br>Parameters: Display Order 'First Last', Display List 'Name and Company', Last First, Name_Company, Contact, Scripts01_E, Company5, TRUE</td>
+<td></td>
+<td>64</td>
+<td>TestCases.TS008_ContactScripts01@11bd0f3b</td></tr>
+<tr>
+<td title='TestCases.TS008_ContactScripts01.TS008_ContactScripts01_Contact8_changeDisplayInSettings()'><b>TS008_ContactScripts01_Contact8_changeDisplayInSettings</b><br>Test class: TestCases.TS008_ContactScripts01<br>Parameters: Display Order 'First Last', Display List 'Name and Default Phone', Last First, Name_Phone, Contact, Scripts01_E, 101112.0, TRUE</td>
+<td></td>
+<td>62</td>
+<td>TestCases.TS008_ContactScripts01@11bd0f3b</td></tr>
+<tr>
+<td title='TestCases.TS008_ContactScripts01.TS008_ContactScripts01_Contact8_changeDisplayInSettings()'><b>TS008_ContactScripts01_Contact8_changeDisplayInSettings</b><br>Test class: TestCases.TS008_ContactScripts01<br>Parameters: Display Order 'First Last', Display List 'Name and Email', First Last, Name_Email, Contact, Scripts01_E, khuong003@123flo.com, TRUE</td>
+<td></td>
+<td>30</td>
+<td>TestCases.TS008_ContactScripts01@11bd0f3b</td></tr>
+<tr>
+<td title='TestCases.TS008_ContactScripts02.TS008_ContactScripts02_Contact1_sendAnEmailBySwiping()'><b>TS008_ContactScripts02_Contact1_sendAnEmailBySwiping</b><br>Test class: TestCases.TS008_ContactScripts02</td>
+<td></td>
+<td>228</td>
+<td>TestCases.TS008_ContactScripts02@c333c60</td></tr>
+<tr>
+<td title='TestCases.TS008_ContactScripts02.TS008_ContactScripts02_Contact2_createLinkedEventBySwiping()'><b>TS008_ContactScripts02_Contact2_createLinkedEventBySwiping</b><br>Test class: TestCases.TS008_ContactScripts02</td>
+<td></td>
+<td>257</td>
+<td>TestCases.TS008_ContactScripts02@c333c60</td></tr>
+<tr>
+<td title='TestCases.TS008_ContactScripts02.TS008_ContactScripts02_Contact3_moveToCollectionBySwiping()'><b>TS008_ContactScripts02_Contact3_moveToCollectionBySwiping</b><br>Test class: TestCases.TS008_ContactScripts02</td>
+<td></td>
+<td>99</td>
+<td>TestCases.TS008_ContactScripts02@c333c60</td></tr>
+<tr>
+<td title='TestCases.TS008_ContactScripts02.TS008_ContactScripts02_Contact4_addToCollectionBySwiping()'><b>TS008_ContactScripts02_Contact4_addToCollectionBySwiping</b><br>Test class: TestCases.TS008_ContactScripts02</td>
+<td></td>
+<td>160</td>
+<td>TestCases.TS008_ContactScripts02@c333c60</td></tr>
+<tr>
+<td title='TestCases.TS008_ContactScripts02.TS008_ContactScripts02_Contact5_deleteContactBySwiping()'><b>TS008_ContactScripts02_Contact5_deleteContactBySwiping</b><br>Test class: TestCases.TS008_ContactScripts02</td>
+<td></td>
+<td>24</td>
+<td>TestCases.TS008_ContactScripts02@c333c60</td></tr>
+<tr>
+<td title='TestCases.TS008_ContactScripts02.TS008_ContactScripts02_Contact6_checkEmailIconNotExistBySwipe()'><b>TS008_ContactScripts02_Contact6_checkEmailIconNotExistBySwipe</b><br>Test class: TestCases.TS008_ContactScripts02</td>
+<td></td>
+<td>62</td>
+<td>TestCases.TS008_ContactScripts02@c333c60</td></tr>
+<tr>
+<td title='TestCases.TS008_ContactScripts02.TS008_ContactScripts02_Contact7_checkPhoneAndChatIconNotExist()'><b>TS008_ContactScripts02_Contact7_checkPhoneAndChatIconNotExist</b><br>Test class: TestCases.TS008_ContactScripts02</td>
+<td></td>
+<td>124</td>
+<td>TestCases.TS008_ContactScripts02@c333c60</td></tr>
+<tr>
+<td title='TestCases.TS008_ContactScripts03.TS008_ContactScripts03_Contact1_FilterByACollectionAddNewContact()'><b>TS008_ContactScripts03_Contact1_FilterByACollectionAddNewContact</b><br>Test class: TestCases.TS008_ContactScripts03</td>
+<td></td>
+<td>174</td>
+<td>TestCases.TS008_ContactScripts03@79da8dc5</td></tr>
+<tr>
+<td title='TestCases.TS008_ContactScripts03.TS008_ContactScripts03_Contact2_FilterByACollectionAddNewVIPContact()'><b>TS008_ContactScripts03_Contact2_FilterByACollectionAddNewVIPContact</b><br>Test class: TestCases.TS008_ContactScripts03</td>
+<td></td>
+<td>168</td>
+<td>TestCases.TS008_ContactScripts03@79da8dc5</td></tr>
+<tr>
+<td title='TestCases.TS008_ContactScripts03.TS008_ContactScripts03_Contact3_FilterByMultiCollectionAddNewContact()'><b>TS008_ContactScripts03_Contact3_FilterByMultiCollectionAddNewContact</b><br>Test class: TestCases.TS008_ContactScripts03</td>
+<td></td>
+<td>235</td>
+<td>TestCases.TS008_ContactScripts03@79da8dc5</td></tr>
+<tr>
+<td title='TestCases.TS008_ContactScripts03.TS008_ContactScripts03_Contact4_FilterByMultiCollectionAddNewVIPContact()'><b>TS008_ContactScripts03_Contact4_FilterByMultiCollectionAddNewVIPContact</b><br>Test class: TestCases.TS008_ContactScripts03</td>
+<td></td>
+<td>176</td>
+<td>TestCases.TS008_ContactScripts03@79da8dc5</td></tr>
+<tr>
+<td title='TestCases.TS008_ContactScripts03.TS008_ContactScripts03_Contact5_checkNumberContact()'><b>TS008_ContactScripts03_Contact5_checkNumberContact</b><br>Test class: TestCases.TS008_ContactScripts03</td>
+<td></td>
+<td>117</td>
+<td>TestCases.TS008_ContactScripts03@79da8dc5</td></tr>
+<tr>
+<td title='TestCases.TS008_ContactScripts03.TS008_ContactScripts03_Contact6_deleteContact()'><b>TS008_ContactScripts03_Contact6_deleteContact</b><br>Test class: TestCases.TS008_ContactScripts03</td>
+<td></td>
+<td>134</td>
+<td>TestCases.TS008_ContactScripts03@79da8dc5</td></tr>
+<tr>
+<td title='TestCases.TS008_ContactScripts03.TS008_ContactScripts03_Contact7_sendEmailFromDetail()'><b>TS008_ContactScripts03_Contact7_sendEmailFromDetail</b><br>Test class: TestCases.TS008_ContactScripts03</td>
+<td></td>
+<td>171</td>
+<td>TestCases.TS008_ContactScripts03@79da8dc5</td></tr>
+<tr>
+<td title='TestCases.TS008_ContactScripts03.TS008_ContactScripts03_Contact8_addEventFromDetail()'><b>TS008_ContactScripts03_Contact8_addEventFromDetail</b><br>Test class: TestCases.TS008_ContactScripts03</td>
+<td></td>
+<td>263</td>
+<td>TestCases.TS008_ContactScripts03@79da8dc5</td></tr>
+<tr>
+<td title='TestCases.TS008_ContactScripts04.TS008_ContactScripts04_Contact1_markVIPContactInList()'><b>TS008_ContactScripts04_Contact1_markVIPContactInList</b><br>Test class: TestCases.TS008_ContactScripts04</td>
+<td></td>
+<td>129</td>
+<td>TestCases.TS008_ContactScripts04@1eb5174b</td></tr>
+<tr>
+<td title='TestCases.TS008_ContactScripts04.TS008_ContactScripts04_Contact2_markVIPContactInDetail()'><b>TS008_ContactScripts04_Contact2_markVIPContactInDetail</b><br>Test class: TestCases.TS008_ContactScripts04</td>
+<td></td>
+<td>120</td>
+<td>TestCases.TS008_ContactScripts04@1eb5174b</td></tr>
+<tr>
+<td title='TestCases.TS008_ContactScripts04.TS008_ContactScripts04_Contact3_UnVIPContactInList()'><b>TS008_ContactScripts04_Contact3_UnVIPContactInList</b><br>Test class: TestCases.TS008_ContactScripts04</td>
+<td></td>
+<td>143</td>
+<td>TestCases.TS008_ContactScripts04@1eb5174b</td></tr>
+<tr>
+<td title='TestCases.TS008_ContactScripts04.TS008_ContactScripts04_Contact4_UnVIPContactInDetail()'><b>TS008_ContactScripts04_Contact4_UnVIPContactInDetail</b><br>Test class: TestCases.TS008_ContactScripts04</td>
+<td></td>
+<td>151</td>
+<td>TestCases.TS008_ContactScripts04@1eb5174b</td></tr>
+<tr>
+<td title='TestCases.TS008_ContactScripts04.TS008_ContactScripts04_Contact5_addCollectionToContactInDetail()'><b>TS008_ContactScripts04_Contact5_addCollectionToContactInDetail</b><br>Test class: TestCases.TS008_ContactScripts04</td>
+<td></td>
+<td>130</td>
+<td>TestCases.TS008_ContactScripts04@1eb5174b</td></tr>
+<tr>
+<td title='TestCases.TS008_ContactScripts04.TS008_ContactScripts04_Contact6_addCollectionToVipContactInDetail()'><b>TS008_ContactScripts04_Contact6_addCollectionToVipContactInDetail</b><br>Test class: TestCases.TS008_ContactScripts04</td>
+<td></td>
+<td>159</td>
+<td>TestCases.TS008_ContactScripts04@1eb5174b</td></tr>
+<tr>
+<td title='TestCases.TS008_ContactScripts04.TS008_ContactScripts04_Contact7_moveCollectionToContactInDetail()'><b>TS008_ContactScripts04_Contact7_moveCollectionToContactInDetail</b><br>Test class: TestCases.TS008_ContactScripts04</td>
+<td></td>
+<td>104</td>
+<td>TestCases.TS008_ContactScripts04@1eb5174b</td></tr>
+<tr>
+<td title='TestCases.TS008_ContactScripts04.TS008_ContactScripts04_Contact8_moveCollectionToVipContactInDetail()'><b>TS008_ContactScripts04_Contact8_moveCollectionToVipContactInDetail</b><br>Test class: TestCases.TS008_ContactScripts04</td>
+<td></td>
+<td>105</td>
+<td>TestCases.TS008_ContactScripts04@1eb5174b</td></tr>
+<tr>
+<td title='TestCases.TS008_ContactScripts05.TS008_ContactScripts05_Contact1_addLinkedTodoInDetail()'><b>TS008_ContactScripts05_Contact1_addLinkedTodoInDetail</b><br>Test class: TestCases.TS008_ContactScripts05</td>
+<td></td>
+<td>201</td>
+<td>TestCases.TS008_ContactScripts05@67080771</td></tr>
+<tr>
+<td title='TestCases.TS008_ContactScripts05.TS008_ContactScripts05_Contact2_addLinkedNoteInDetail()'><b>TS008_ContactScripts05_Contact2_addLinkedNoteInDetail</b><br>Test class: TestCases.TS008_ContactScripts05</td>
+<td></td>
+<td>205</td>
+<td>TestCases.TS008_ContactScripts05@67080771</td></tr>
+<tr>
+<td title='TestCases.TS008_ContactScripts05.TS008_ContactScripts05_Contact3_addLinkedContactInDetail()'><b>TS008_ContactScripts05_Contact3_addLinkedContactInDetail</b><br>Test class: TestCases.TS008_ContactScripts05</td>
+<td></td>
+<td>130</td>
+<td>TestCases.TS008_ContactScripts05@67080771</td></tr>
+<tr>
+<td title='TestCases.TS008_ContactScripts05.TS008_ContactScripts05_Contact4_searchContactByAllCollections()'><b>TS008_ContactScripts05_Contact4_searchContactByAllCollections</b><br>Test class: TestCases.TS008_ContactScripts05</td>
+<td></td>
+<td>45</td>
+<td>TestCases.TS008_ContactScripts05@67080771</td></tr>
+<tr>
+<td title='TestCases.TS008_ContactScripts05.TS008_ContactScripts05_Contact5_searchContactByACollection()'><b>TS008_ContactScripts05_Contact5_searchContactByACollection</b><br>Test class: TestCases.TS008_ContactScripts05</td>
+<td></td>
+<td>76</td>
+<td>TestCases.TS008_ContactScripts05@67080771</td></tr>
+<tr>
+<td title='TestCases.TS008_ContactScripts05.TS008_ContactScripts05_Contact6_searchContactNotDependAllCollections()'><b>TS008_ContactScripts05_Contact6_searchContactNotDependAllCollections</b><br>Test class: TestCases.TS008_ContactScripts05</td>
+<td></td>
+<td>76</td>
+<td>TestCases.TS008_ContactScripts05@67080771</td></tr>
+<tr>
+<td title='TestCases.TS008_ContactScripts05.TS008_ContactScripts05_Contact7_searchContactNotDependACollection()'><b>TS008_ContactScripts05_Contact7_searchContactNotDependACollection</b><br>Test class: TestCases.TS008_ContactScripts05</td>
+<td></td>
+<td>69</td>
+<td>TestCases.TS008_ContactScripts05@67080771</td></tr>
+<tr>
+<td title='TestCases.TS008_ContactScripts05.TS008_ContactScripts05_Contact8_searchContactNotDependVipFilter()'><b>TS008_ContactScripts05_Contact8_searchContactNotDependVipFilter</b><br>Test class: TestCases.TS008_ContactScripts05</td>
+<td></td>
+<td>32</td>
+<td>TestCases.TS008_ContactScripts05@67080771</td></tr>
+<tr>
+<td title='TestCases.TS008_ContactScripts05.TS008_ContactScripts05_Contact9_searchContactNotExist()'><b>TS008_ContactScripts05_Contact9_searchContactNotExist</b><br>Test class: TestCases.TS008_ContactScripts05</td>
+<td></td>
+<td>37</td>
+<td>TestCases.TS008_ContactScripts05@67080771</td></tr>
+</table><p>
+</body>
+</html>

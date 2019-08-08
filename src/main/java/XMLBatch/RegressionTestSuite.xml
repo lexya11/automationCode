@@ -1,0 +1,51 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name = "Regression test Suite">
+    <test name = "Regression test">
+        <classes>
+            <class name = "TestCases.TS001_SignInScripts"/>
+            <class name = "TestCases.TS002_SignUpScripts01"/>
+            <class name = "TestCases.TS002_SignUpScripts02"/>
+            <class name = "TestCases.TS003_GeneralScripts"/>
+            <class name = "TestCases.TS004_SettingsScripts01"/>
+            <class name = "TestCases.TS004_SettingsScripts02"/>
+            <class name = "TestCases.TS004_SettingsScripts03"/>
+            <class name = "TestCases.TS004_SettingsScripts04"/>
+            <class name = "TestCases.TS004_SettingsScripts05"/>
+            <class name = "TestCases.TS004_SettingsScripts07"/>
+            <class name = "TestCases.TS005_EmailScripts01"/>
+            <class name = "TestCases.TS005_EmailScripts02"/>
+            <class name = "TestCases.TS005_EmailScripts03"/>
+            <class name = "TestCases.TS005_EmailScripts04"/>
+            <class name = "TestCases.TS005_EmailScripts05"/>
+            <class name = "TestCases.TS005_EmailScripts06"/>
+            <class name = "TestCases.TS007_TodoScripts01"/>
+            <class name = "TestCases.TS007_TodoScripts02"/>
+            <class name = "TestCases.TS007_TodoScripts03"/>
+            <class name = "TestCases.TS007_TodoScripts04"/>
+            <class name = "TestCases.TS007_TodoScripts05"/>
+            <class name = "TestCases.TS008_ContactScripts01"/>
+            <class name = "TestCases.TS008_ContactScripts02"/>
+            <class name = "TestCases.TS008_ContactScripts03"/>
+            <class name = "TestCases.TS008_ContactScripts04"/>
+            <class name = "TestCases.TS008_ContactScripts05"/>
+            <class name = "TestCases.TS009_NoteScripts01"/>
+            <class name = "TestCases.TS009_NoteScripts02"/>
+            <class name = "TestCases.TS009_NoteScripts03"/>
+            <class name = "TestCases.TS010_CollectionScripts01"/>
+            <class name = "TestCases.TS010_CollectionScripts02"/>
+            <class name = "TestCases.TS010_CollectionScripts03"/>
+            <class name = "TestCases.TS010_CollectionScripts04"/>
+            <class name = "TestCases.TS010_CollectionScripts05"/>
+            <class name = "TestCases.TS010_CollectionScripts06"/>
+            <!--<class name = "TestCases.TS006_AgendaScripts01"/>-->
+            <!--<class name = "TestCases.TS006_AgendaScripts02"/>-->
+            <!--<class name = "TestCases.TS006_AgendaScripts03"/>-->
+            <!--<class name = "TestCases.TS006_AgendaScripts04"/>-->
+            <!--<class name = "TestCases.TS006_AgendaScripts05"/>-->
+            <!--<class name = "TestCases.TS006_AgendaScripts06"/>-->
+            <class name = "TestCasesManual.SendEmailScripts"/>
+        </classes>
+    </test>
+</suite>

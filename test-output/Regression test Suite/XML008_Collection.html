@@ -1,0 +1,456 @@
+<html>
+<head>
+<title>TestNG:  XML008_Collection</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>XML008_Collection</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>38/1/0</td>
+</tr><tr>
+<td>Started on:</td><td>Thu Jan 24 13:41:31 ICT 2019</td>
+</tr>
+<tr><td>Total time:</td><td>5012 seconds (5012716 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='TestCases.TS010_CollectionScripts03.clearUp()'><b>clearUp</b><br>Test class: TestCases.TS010_CollectionScripts03</td>
+<td><div><pre>java.lang.NullPointerException
+	at Keywords.CollectionKeywords.swipeRightToLeftItem(CollectionKeywords.java:651)
+	at TestCases.TS010_CollectionScripts03.clearUp(TS010_CollectionScripts03.java:245)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace303354428", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace303354428'><pre>java.lang.NullPointerException
+	at Keywords.CollectionKeywords.swipeRightToLeftItem(CollectionKeywords.java:651)
+	at TestCases.TS010_CollectionScripts03.clearUp(TS010_CollectionScripts03.java:245)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:523)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:224)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeAfterClassMethods(TestMethodWorker.java:212)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:72)
+	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
+</pre></div></td>
+<td>22</td>
+<td>TestCases.TS010_CollectionScripts03@770d3326</td></tr>
+<tr>
+<td title='TestCases.TS010_CollectionScripts06.clearUp()'><b>clearUp</b><br>Test class: TestCases.TS010_CollectionScripts06</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;Bis-Mac-mini.local&apos;, ip: &apos;192.168.1.63&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.13.6&apos;, java.version: &apos;10.0.2&apos;
+Driver info: io.appium.java_client.ios.IOSDriver
+Capabilities {app: /Users/Bi_DATA/FileFloApp/F..., automationName: XCUITest, browserName: , databaseEnabled: false, deviceName: iPhone 6s, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: false, newCommandTimeout: 4000, noReset: false, platform: MAC, platformName: iOS, platformVersion: 12.0, showXcodeLog: true, takesScreenshot: true, udid: 94D12BCB-9253-4B1A-B4CB-B2D..., webStorageEnabled: false}
+Session ID: 6603430d-710f-4d8f-87a9-f33cd1af5d9e
+*** Element info: {Using=name, value=}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:231)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.execute(IOSDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:62)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.findElement(IOSDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:400)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementByName(DefaultGenericMobileDriver.java:118)
+	at io.appium.java_client.AppiumDriver.findElementByName(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.findElementByName(IOSDriver.java:1)
+	at org.openqa.selenium.By$ByName.findElement(By.java:284)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:58)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.findElement(IOSDriver.java:1)
+	at Support.SetupServer.tapElement(SetupServer.java:240)
+	at Keywords.CollectionKeywords.swipeRightToLeftItem(CollectionKeywords.java:674)
+	at TestCases.TS010_CollectionScripts06.clearUp(TS010_CollectionScripts06.java:270)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1966896145", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1966896145'><pre>org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;Bis-Mac-mini.local&apos;, ip: &apos;192.168.1.63&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.13.6&apos;, java.version: &apos;10.0.2&apos;
+Driver info: io.appium.java_client.ios.IOSDriver
+Capabilities {app: /Users/Bi_DATA/FileFloApp/F..., automationName: XCUITest, browserName: , databaseEnabled: false, deviceName: iPhone 6s, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: false, newCommandTimeout: 4000, noReset: false, platform: MAC, platformName: iOS, platformVersion: 12.0, showXcodeLog: true, takesScreenshot: true, udid: 94D12BCB-9253-4B1A-B4CB-B2D..., webStorageEnabled: false}
+Session ID: 6603430d-710f-4d8f-87a9-f33cd1af5d9e
+*** Element info: {Using=name, value=}
+	at jdk.internal.reflect.GeneratedConstructorAccessor10.newInstance(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:488)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:231)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.execute(IOSDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:62)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.findElement(IOSDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:400)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementByName(DefaultGenericMobileDriver.java:118)
+	at io.appium.java_client.AppiumDriver.findElementByName(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.findElementByName(IOSDriver.java:1)
+	at org.openqa.selenium.By$ByName.findElement(By.java:284)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:58)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.findElement(IOSDriver.java:1)
+	at Support.SetupServer.tapElement(SetupServer.java:240)
+	at Keywords.CollectionKeywords.swipeRightToLeftItem(CollectionKeywords.java:674)
+	at TestCases.TS010_CollectionScripts06.clearUp(TS010_CollectionScripts06.java:270)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:523)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:224)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeAfterClassMethods(TestMethodWorker.java:212)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:72)
+	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
+</pre></div></td>
+<td>107</td>
+<td>TestCases.TS010_CollectionScripts06@19d481b</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='TestCases.TS010_CollectionScripts03.TS010_CollectionScripts03_Collection2_addNoteLinkedToDoBySwipe()'><b>TS010_CollectionScripts03_Collection2_addNoteLinkedToDoBySwipe</b><br>Test class: TestCases.TS010_CollectionScripts03</td>
+<td><div><pre>java.lang.NullPointerException
+	at Keywords.CollectionKeywords.swipeLeftToRightItem(CollectionKeywords.java:570)
+	at TestCases.TS010_CollectionScripts03.TS010_CollectionScripts03_Collection2_addNoteLinkedToDoBySwipe(TS010_CollectionScripts03.java:116)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1561480489", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1561480489'><pre>java.lang.NullPointerException
+	at Keywords.CollectionKeywords.swipeLeftToRightItem(CollectionKeywords.java:570)
+	at TestCases.TS010_CollectionScripts03.TS010_CollectionScripts03_Collection2_addNoteLinkedToDoBySwipe(TS010_CollectionScripts03.java:116)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:72)
+	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
+</pre></div></td>
+<td>4</td>
+<td>TestCases.TS010_CollectionScripts03@770d3326</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='TestCases.TS010_CollectionScripts01.TS010_CollectionScripts01_Collection1_verifyCollectionView()'><b>TS010_CollectionScripts01_Collection1_verifyCollectionView</b><br>Test class: TestCases.TS010_CollectionScripts01</td>
+<td></td>
+<td>4</td>
+<td>TestCases.TS010_CollectionScripts01@6a370f4</td></tr>
+<tr>
+<td title='TestCases.TS010_CollectionScripts01.TS010_CollectionScripts01_Collection2_addNewEventFromPlusIcon()'><b>TS010_CollectionScripts01_Collection2_addNewEventFromPlusIcon</b><br>Test class: TestCases.TS010_CollectionScripts01</td>
+<td></td>
+<td>118</td>
+<td>TestCases.TS010_CollectionScripts01@6a370f4</td></tr>
+<tr>
+<td title='TestCases.TS010_CollectionScripts01.TS010_CollectionScripts01_Collection3_addNewTodoFromPlusIcon()'><b>TS010_CollectionScripts01_Collection3_addNewTodoFromPlusIcon</b><br>Test class: TestCases.TS010_CollectionScripts01</td>
+<td></td>
+<td>101</td>
+<td>TestCases.TS010_CollectionScripts01@6a370f4</td></tr>
+<tr>
+<td title='TestCases.TS010_CollectionScripts01.TS010_CollectionScripts01_Collection4_addNewContactFromPlusIcon()'><b>TS010_CollectionScripts01_Collection4_addNewContactFromPlusIcon</b><br>Test class: TestCases.TS010_CollectionScripts01</td>
+<td></td>
+<td>154</td>
+<td>TestCases.TS010_CollectionScripts01@6a370f4</td></tr>
+<tr>
+<td title='TestCases.TS010_CollectionScripts01.TS010_CollectionScripts01_Collection5_addNewNoteFromPlusIcon()'><b>TS010_CollectionScripts01_Collection5_addNewNoteFromPlusIcon</b><br>Test class: TestCases.TS010_CollectionScripts01</td>
+<td></td>
+<td>118</td>
+<td>TestCases.TS010_CollectionScripts01@6a370f4</td></tr>
+<tr>
+<td title='TestCases.TS010_CollectionScripts02.TS010_CollectionScripts02_Collection1_addEventLinkedToEventBySwipe()'><b>TS010_CollectionScripts02_Collection1_addEventLinkedToEventBySwipe</b><br>Test class: TestCases.TS010_CollectionScripts02</td>
+<td></td>
+<td>253</td>
+<td>TestCases.TS010_CollectionScripts02@2abf4075</td></tr>
+<tr>
+<td title='TestCases.TS010_CollectionScripts02.TS010_CollectionScripts02_Collection2_addTodoLinkedToEventBySwipe()'><b>TS010_CollectionScripts02_Collection2_addTodoLinkedToEventBySwipe</b><br>Test class: TestCases.TS010_CollectionScripts02</td>
+<td></td>
+<td>167</td>
+<td>TestCases.TS010_CollectionScripts02@2abf4075</td></tr>
+<tr>
+<td title='TestCases.TS010_CollectionScripts02.TS010_CollectionScripts02_Collection3_addNoteLinkedToEventBySwipe()'><b>TS010_CollectionScripts02_Collection3_addNoteLinkedToEventBySwipe</b><br>Test class: TestCases.TS010_CollectionScripts02</td>
+<td></td>
+<td>219</td>
+<td>TestCases.TS010_CollectionScripts02@2abf4075</td></tr>
+<tr>
+<td title='TestCases.TS010_CollectionScripts02.TS010_CollectionScripts02_Collection4_moveEventToCollectionBySwipe()'><b>TS010_CollectionScripts02_Collection4_moveEventToCollectionBySwipe</b><br>Test class: TestCases.TS010_CollectionScripts02</td>
+<td></td>
+<td>81</td>
+<td>TestCases.TS010_CollectionScripts02@2abf4075</td></tr>
+<tr>
+<td title='TestCases.TS010_CollectionScripts02.TS010_CollectionScripts02_Collection5_addEventToCollectionBySwipe()'><b>TS010_CollectionScripts02_Collection5_addEventToCollectionBySwipe</b><br>Test class: TestCases.TS010_CollectionScripts02</td>
+<td></td>
+<td>129</td>
+<td>TestCases.TS010_CollectionScripts02@2abf4075</td></tr>
+<tr>
+<td title='TestCases.TS010_CollectionScripts02.TS010_CollectionScripts02_Collection6_deleteEventBySwipe()'><b>TS010_CollectionScripts02_Collection6_deleteEventBySwipe</b><br>Test class: TestCases.TS010_CollectionScripts02</td>
+<td></td>
+<td>19</td>
+<td>TestCases.TS010_CollectionScripts02@2abf4075</td></tr>
+<tr>
+<td title='TestCases.TS010_CollectionScripts03.TS010_CollectionScripts03_Collection1_addEmailLinkedToDoBySwipe()'><b>TS010_CollectionScripts03_Collection1_addEmailLinkedToDoBySwipe</b><br>Test class: TestCases.TS010_CollectionScripts03</td>
+<td></td>
+<td>244</td>
+<td>TestCases.TS010_CollectionScripts03@770d3326</td></tr>
+<tr>
+<td title='TestCases.TS010_CollectionScripts03.TS010_CollectionScripts03_Collection3_addDueForToDoBySwipe()'><b>TS010_CollectionScripts03_Collection3_addDueForToDoBySwipe</b><br>Test class: TestCases.TS010_CollectionScripts03<br>Parameters: Set Due date In 3 Days, CollectionScripts03_Todo 1, Due, 3 days, 3.0</td>
+<td></td>
+<td>33</td>
+<td>TestCases.TS010_CollectionScripts03@770d3326</td></tr>
+<tr>
+<td title='TestCases.TS010_CollectionScripts03.TS010_CollectionScripts03_Collection3_addDueForToDoBySwipe()'><b>TS010_CollectionScripts03_Collection3_addDueForToDoBySwipe</b><br>Test class: TestCases.TS010_CollectionScripts03<br>Parameters: Set Due date In 10 Days, CollectionScripts03_Todo 1, Due, 10 days, 10.0</td>
+<td></td>
+<td>33</td>
+<td>TestCases.TS010_CollectionScripts03@770d3326</td></tr>
+<tr>
+<td title='TestCases.TS010_CollectionScripts03.TS010_CollectionScripts03_Collection3_addDueForToDoBySwipe()'><b>TS010_CollectionScripts03_Collection3_addDueForToDoBySwipe</b><br>Test class: TestCases.TS010_CollectionScripts03<br>Parameters: Set Due date In 30 Days, CollectionScripts03_Todo 1, Due, 30 days, 30.0</td>
+<td></td>
+<td>34</td>
+<td>TestCases.TS010_CollectionScripts03@770d3326</td></tr>
+<tr>
+<td title='TestCases.TS010_CollectionScripts03.TS010_CollectionScripts03_Collection3_addDueForToDoBySwipe()'><b>TS010_CollectionScripts03_Collection3_addDueForToDoBySwipe</b><br>Test class: TestCases.TS010_CollectionScripts03<br>Parameters: Set Due date Today, CollectionScripts03_Todo 1, Due, Today, 0.0</td>
+<td></td>
+<td>33</td>
+<td>TestCases.TS010_CollectionScripts03@770d3326</td></tr>
+<tr>
+<td title='TestCases.TS010_CollectionScripts03.TS010_CollectionScripts03_Collection4_MoveToDoToCollectionBySwipe()'><b>TS010_CollectionScripts03_Collection4_MoveToDoToCollectionBySwipe</b><br>Test class: TestCases.TS010_CollectionScripts03</td>
+<td></td>
+<td>75</td>
+<td>TestCases.TS010_CollectionScripts03@770d3326</td></tr>
+<tr>
+<td title='TestCases.TS010_CollectionScripts03.TS010_CollectionScripts03_Collection5_addToDoToCollectionBySwipe()'><b>TS010_CollectionScripts03_Collection5_addToDoToCollectionBySwipe</b><br>Test class: TestCases.TS010_CollectionScripts03</td>
+<td></td>
+<td>108</td>
+<td>TestCases.TS010_CollectionScripts03@770d3326</td></tr>
+<tr>
+<td title='TestCases.TS010_CollectionScripts03.TS010_CollectionScripts03_Collection6_deleteToDoBySwipe()'><b>TS010_CollectionScripts03_Collection6_deleteToDoBySwipe</b><br>Test class: TestCases.TS010_CollectionScripts03</td>
+<td></td>
+<td>19</td>
+<td>TestCases.TS010_CollectionScripts03@770d3326</td></tr>
+<tr>
+<td title='TestCases.TS010_CollectionScripts04.TS010_CollectionScripts04_Collection1_sendAnEmailBySwipeOnContact()'><b>TS010_CollectionScripts04_Collection1_sendAnEmailBySwipeOnContact</b><br>Test class: TestCases.TS010_CollectionScripts04</td>
+<td></td>
+<td>140</td>
+<td>TestCases.TS010_CollectionScripts04@4cc8eb05</td></tr>
+<tr>
+<td title='TestCases.TS010_CollectionScripts04.TS010_CollectionScripts04_Collection2_createNewEventBySwipeOnContact()'><b>TS010_CollectionScripts04_Collection2_createNewEventBySwipeOnContact</b><br>Test class: TestCases.TS010_CollectionScripts04</td>
+<td></td>
+<td>226</td>
+<td>TestCases.TS010_CollectionScripts04@4cc8eb05</td></tr>
+<tr>
+<td title='TestCases.TS010_CollectionScripts04.TS010_CollectionScripts04_Collection3_moveContactToCollectionBySwipe()'><b>TS010_CollectionScripts04_Collection3_moveContactToCollectionBySwipe</b><br>Test class: TestCases.TS010_CollectionScripts04</td>
+<td></td>
+<td>112</td>
+<td>TestCases.TS010_CollectionScripts04@4cc8eb05</td></tr>
+<tr>
+<td title='TestCases.TS010_CollectionScripts04.TS010_CollectionScripts04_Collection4_addContactToCollectionBySwipe()'><b>TS010_CollectionScripts04_Collection4_addContactToCollectionBySwipe</b><br>Test class: TestCases.TS010_CollectionScripts04</td>
+<td></td>
+<td>155</td>
+<td>TestCases.TS010_CollectionScripts04@4cc8eb05</td></tr>
+<tr>
+<td title='TestCases.TS010_CollectionScripts04.TS010_CollectionScripts04_Collection5_deleteContactBySwipe()'><b>TS010_CollectionScripts04_Collection5_deleteContactBySwipe</b><br>Test class: TestCases.TS010_CollectionScripts04</td>
+<td></td>
+<td>19</td>
+<td>TestCases.TS010_CollectionScripts04@4cc8eb05</td></tr>
+<tr>
+<td title='TestCases.TS010_CollectionScripts05.TS010_CollectionScripts05_Collection1_sendEmailBySwipeOnNote()'><b>TS010_CollectionScripts05_Collection1_sendEmailBySwipeOnNote</b><br>Test class: TestCases.TS010_CollectionScripts05</td>
+<td></td>
+<td>150</td>
+<td>TestCases.TS010_CollectionScripts05@51f116b8</td></tr>
+<tr>
+<td title='TestCases.TS010_CollectionScripts05.TS010_CollectionScripts05_Collection2_createNewEventBySwipeOnNote()'><b>TS010_CollectionScripts05_Collection2_createNewEventBySwipeOnNote</b><br>Test class: TestCases.TS010_CollectionScripts05</td>
+<td></td>
+<td>195</td>
+<td>TestCases.TS010_CollectionScripts05@51f116b8</td></tr>
+<tr>
+<td title='TestCases.TS010_CollectionScripts05.TS010_CollectionScripts05_Collection3_createNewTodoBySwipeOnNote()'><b>TS010_CollectionScripts05_Collection3_createNewTodoBySwipeOnNote</b><br>Test class: TestCases.TS010_CollectionScripts05</td>
+<td></td>
+<td>123</td>
+<td>TestCases.TS010_CollectionScripts05@51f116b8</td></tr>
+<tr>
+<td title='TestCases.TS010_CollectionScripts05.TS010_CollectionScripts05_Collection4_moveNoteToCollectionBySwipe()'><b>TS010_CollectionScripts05_Collection4_moveNoteToCollectionBySwipe</b><br>Test class: TestCases.TS010_CollectionScripts05</td>
+<td></td>
+<td>94</td>
+<td>TestCases.TS010_CollectionScripts05@51f116b8</td></tr>
+<tr>
+<td title='TestCases.TS010_CollectionScripts05.TS010_CollectionScripts05_Collection5_addNoteToCollectionsBySwipe()'><b>TS010_CollectionScripts05_Collection5_addNoteToCollectionsBySwipe</b><br>Test class: TestCases.TS010_CollectionScripts05</td>
+<td></td>
+<td>109</td>
+<td>TestCases.TS010_CollectionScripts05@51f116b8</td></tr>
+<tr>
+<td title='TestCases.TS010_CollectionScripts05.TS010_CollectionScripts05_Collection6_deleteNoteBySwipe()'><b>TS010_CollectionScripts05_Collection6_deleteNoteBySwipe</b><br>Test class: TestCases.TS010_CollectionScripts05</td>
+<td></td>
+<td>19</td>
+<td>TestCases.TS010_CollectionScripts05@51f116b8</td></tr>
+<tr>
+<td title='TestCases.TS010_CollectionScripts06.TS010_CollectionScripts06_Collection1_addNewEventFromSuggestionList()'><b>TS010_CollectionScripts06_Collection1_addNewEventFromSuggestionList</b><br>Test class: TestCases.TS010_CollectionScripts06</td>
+<td></td>
+<td>124</td>
+<td>TestCases.TS010_CollectionScripts06@19d481b</td></tr>
+<tr>
+<td title='TestCases.TS010_CollectionScripts06.TS010_CollectionScripts06_Collection2_addNewTodoFromSuggestionList()'><b>TS010_CollectionScripts06_Collection2_addNewTodoFromSuggestionList</b><br>Test class: TestCases.TS010_CollectionScripts06</td>
+<td></td>
+<td>114</td>
+<td>TestCases.TS010_CollectionScripts06@19d481b</td></tr>
+<tr>
+<td title='TestCases.TS010_CollectionScripts06.TS010_CollectionScripts06_Collection3_addNewContactFromSuggestionList()'><b>TS010_CollectionScripts06_Collection3_addNewContactFromSuggestionList</b><br>Test class: TestCases.TS010_CollectionScripts06</td>
+<td></td>
+<td>125</td>
+<td>TestCases.TS010_CollectionScripts06@19d481b</td></tr>
+<tr>
+<td title='TestCases.TS010_CollectionScripts06.TS010_CollectionScripts06_Collection4_addNewNoteFromSuggestionList()'><b>TS010_CollectionScripts06_Collection4_addNewNoteFromSuggestionList</b><br>Test class: TestCases.TS010_CollectionScripts06</td>
+<td></td>
+<td>115</td>
+<td>TestCases.TS010_CollectionScripts06@19d481b</td></tr>
+<tr>
+<td title='TestCases.TS010_CollectionScripts06.TS010_CollectionScripts06_Collection5_searchAndAddEvent()'><b>TS010_CollectionScripts06_Collection5_searchAndAddEvent</b><br>Test class: TestCases.TS010_CollectionScripts06</td>
+<td></td>
+<td>63</td>
+<td>TestCases.TS010_CollectionScripts06@19d481b</td></tr>
+<tr>
+<td title='TestCases.TS010_CollectionScripts06.TS010_CollectionScripts06_Collection6_searchAndAddTodo()'><b>TS010_CollectionScripts06_Collection6_searchAndAddTodo</b><br>Test class: TestCases.TS010_CollectionScripts06</td>
+<td></td>
+<td>61</td>
+<td>TestCases.TS010_CollectionScripts06@19d481b</td></tr>
+<tr>
+<td title='TestCases.TS010_CollectionScripts06.TS010_CollectionScripts06_Collection7_searchAndAddNote()'><b>TS010_CollectionScripts06_Collection7_searchAndAddNote</b><br>Test class: TestCases.TS010_CollectionScripts06</td>
+<td></td>
+<td>61</td>
+<td>TestCases.TS010_CollectionScripts06@19d481b</td></tr>
+<tr>
+<td title='TestCases.TS010_CollectionScripts06.TS010_CollectionScripts06_Collection8_searchAndAddContact()'><b>TS010_CollectionScripts06_Collection8_searchAndAddContact</b><br>Test class: TestCases.TS010_CollectionScripts06</td>
+<td></td>
+<td>73</td>
+<td>TestCases.TS010_CollectionScripts06@19d481b</td></tr>
+</table><p>
+</body>
+</html>

@@ -1,0 +1,639 @@
+<html>
+<head>
+<title>TestNG:  XML006_Todo</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>XML006_Todo</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>44/8/0</td>
+</tr><tr>
+<td>Started on:</td><td>Fri Jan 18 09:38:53 ICT 2019</td>
+</tr>
+<tr><td>Total time:</td><td>6019 seconds (6019922 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='TestCases.TS007_TodoScripts01.clearUp()'><b>clearUp</b><br>Test class: TestCases.TS007_TodoScripts01</td>
+<td><div><pre>java.lang.NullPointerException
+	at Keywords.CommonKeywords.clickViewBottomBar(CommonKeywords.java:1201)
+	at TestCases.TS007_TodoScripts01.clearUp(TS007_TodoScripts01.java:179)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace208513211", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace208513211'><pre>java.lang.NullPointerException
+	at Keywords.CommonKeywords.clickViewBottomBar(CommonKeywords.java:1201)
+	at TestCases.TS007_TodoScripts01.clearUp(TS007_TodoScripts01.java:179)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:523)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:224)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeAfterClassMethods(TestMethodWorker.java:212)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:72)
+	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
+</pre></div></td>
+<td>0</td>
+<td>TestCases.TS007_TodoScripts01@503d687a</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='TestCases.TS007_TodoScripts01.TS007_TodoScripts01_ToDo2_addQuickToDo()'><b>TS007_TodoScripts01_ToDo2_addQuickToDo</b><br>Test class: TestCases.TS007_TodoScripts01</td>
+<td><div><pre>java.lang.NullPointerException
+	at Keywords.TodoKeywords.filterByType(TodoKeywords.java:154)
+	at TestCases.TS007_TodoScripts01.TS007_TodoScripts01_ToDo2_addQuickToDo(TS007_TodoScripts01.java:101)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace402207819", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace402207819'><pre>java.lang.NullPointerException
+	at Keywords.TodoKeywords.filterByType(TodoKeywords.java:154)
+	at TestCases.TS007_TodoScripts01.TS007_TodoScripts01_ToDo2_addQuickToDo(TS007_TodoScripts01.java:101)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:72)
+	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
+</pre></div></td>
+<td>48</td>
+<td>TestCases.TS007_TodoScripts01@503d687a</td></tr>
+<tr>
+<td title='TestCases.TS007_TodoScripts01.TS007_TodoScripts01_ToDo3_addToDoFromPlusButton()'><b>TS007_TodoScripts01_ToDo3_addToDoFromPlusButton</b><br>Test class: TestCases.TS007_TodoScripts01</td>
+<td><div><pre>java.lang.NullPointerException
+	at Keywords.CommonKeywords.openNewItemView(CommonKeywords.java:1338)
+	at TestCases.TS007_TodoScripts01.TS007_TodoScripts01_ToDo3_addToDoFromPlusButton(TS007_TodoScripts01.java:124)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1811942924", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1811942924'><pre>java.lang.NullPointerException
+	at Keywords.CommonKeywords.openNewItemView(CommonKeywords.java:1338)
+	at TestCases.TS007_TodoScripts01.TS007_TodoScripts01_ToDo3_addToDoFromPlusButton(TS007_TodoScripts01.java:124)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:72)
+	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
+</pre></div></td>
+<td>18</td>
+<td>TestCases.TS007_TodoScripts01@503d687a</td></tr>
+<tr>
+<td title='TestCases.TS007_TodoScripts01.TS007_TodoScripts01_ToDo4_setDueDateBySwiping()'><b>TS007_TodoScripts01_ToDo4_setDueDateBySwiping</b><br>Test class: TestCases.TS007_TodoScripts01<br>Parameters: Set Due date In 3 Days, 3 days, 3.0</td>
+<td><div><pre>java.lang.NullPointerException
+	at Keywords.TodoKeywords.setDueDateBySwipe(TodoKeywords.java:746)
+	at TestCases.TS007_TodoScripts01.TS007_TodoScripts01_ToDo4_setDueDateBySwiping(TS007_TodoScripts01.java:140)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace197195067", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace197195067'><pre>java.lang.NullPointerException
+	at Keywords.TodoKeywords.setDueDateBySwipe(TodoKeywords.java:746)
+	at TestCases.TS007_TodoScripts01.TS007_TodoScripts01_ToDo4_setDueDateBySwiping(TS007_TodoScripts01.java:140)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:72)
+	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
+</pre></div></td>
+<td>7</td>
+<td>TestCases.TS007_TodoScripts01@503d687a</td></tr>
+<tr>
+<td title='TestCases.TS007_TodoScripts01.TS007_TodoScripts01_ToDo4_setDueDateBySwiping()'><b>TS007_TodoScripts01_ToDo4_setDueDateBySwiping</b><br>Test class: TestCases.TS007_TodoScripts01<br>Parameters: Set Due date In 10 Days, 10 days, 10.0</td>
+<td><div><pre>java.lang.NullPointerException
+	at Keywords.TodoKeywords.setDueDateBySwipe(TodoKeywords.java:746)
+	at TestCases.TS007_TodoScripts01.TS007_TodoScripts01_ToDo4_setDueDateBySwiping(TS007_TodoScripts01.java:140)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2018270965", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2018270965'><pre>java.lang.NullPointerException
+	at Keywords.TodoKeywords.setDueDateBySwipe(TodoKeywords.java:746)
+	at TestCases.TS007_TodoScripts01.TS007_TodoScripts01_ToDo4_setDueDateBySwiping(TS007_TodoScripts01.java:140)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:72)
+	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
+</pre></div></td>
+<td>6</td>
+<td>TestCases.TS007_TodoScripts01@503d687a</td></tr>
+<tr>
+<td title='TestCases.TS007_TodoScripts01.TS007_TodoScripts01_ToDo4_setDueDateBySwiping()'><b>TS007_TodoScripts01_ToDo4_setDueDateBySwiping</b><br>Test class: TestCases.TS007_TodoScripts01<br>Parameters: Set Due date In 30 Days, 30 days, 30.0</td>
+<td><div><pre>java.lang.NullPointerException
+	at Keywords.TodoKeywords.setDueDateBySwipe(TodoKeywords.java:746)
+	at TestCases.TS007_TodoScripts01.TS007_TodoScripts01_ToDo4_setDueDateBySwiping(TS007_TodoScripts01.java:140)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1020397237", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1020397237'><pre>java.lang.NullPointerException
+	at Keywords.TodoKeywords.setDueDateBySwipe(TodoKeywords.java:746)
+	at TestCases.TS007_TodoScripts01.TS007_TodoScripts01_ToDo4_setDueDateBySwiping(TS007_TodoScripts01.java:140)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:72)
+	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
+</pre></div></td>
+<td>6</td>
+<td>TestCases.TS007_TodoScripts01@503d687a</td></tr>
+<tr>
+<td title='TestCases.TS007_TodoScripts01.TS007_TodoScripts01_ToDo4_setDueDateBySwiping()'><b>TS007_TodoScripts01_ToDo4_setDueDateBySwiping</b><br>Test class: TestCases.TS007_TodoScripts01<br>Parameters: Set Due date Today, Today, 0.0</td>
+<td><div><pre>java.lang.NullPointerException
+	at Keywords.TodoKeywords.setDueDateBySwipe(TodoKeywords.java:746)
+	at TestCases.TS007_TodoScripts01.TS007_TodoScripts01_ToDo4_setDueDateBySwiping(TS007_TodoScripts01.java:140)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1434367299", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1434367299'><pre>java.lang.NullPointerException
+	at Keywords.TodoKeywords.setDueDateBySwipe(TodoKeywords.java:746)
+	at TestCases.TS007_TodoScripts01.TS007_TodoScripts01_ToDo4_setDueDateBySwiping(TS007_TodoScripts01.java:140)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:72)
+	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
+</pre></div></td>
+<td>7</td>
+<td>TestCases.TS007_TodoScripts01@503d687a</td></tr>
+<tr>
+<td title='TestCases.TS007_TodoScripts01.TS007_TodoScripts01_ToDo5_deleteTodoBySwiping()'><b>TS007_TodoScripts01_ToDo5_deleteTodoBySwiping</b><br>Test class: TestCases.TS007_TodoScripts01</td>
+<td><div><pre>java.lang.NullPointerException
+	at Keywords.TodoKeywords.deleteTodoBySwipe(TodoKeywords.java:874)
+	at TestCases.TS007_TodoScripts01.TS007_TodoScripts01_ToDo5_deleteTodoBySwiping(TS007_TodoScripts01.java:167)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1221433900", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1221433900'><pre>java.lang.NullPointerException
+	at Keywords.TodoKeywords.deleteTodoBySwipe(TodoKeywords.java:874)
+	at TestCases.TS007_TodoScripts01.TS007_TodoScripts01_ToDo5_deleteTodoBySwiping(TS007_TodoScripts01.java:167)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:72)
+	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
+</pre></div></td>
+<td>0</td>
+<td>TestCases.TS007_TodoScripts01@503d687a</td></tr>
+<tr>
+<td title='TestCases.TS007_TodoScripts05.TS007_TodoScripts05_Todo4_searchTodoByContentFromTodoList()'><b>TS007_TodoScripts05_Todo4_searchTodoByContentFromTodoList</b><br>Test class: TestCases.TS007_TodoScripts05</td>
+<td><div><pre>java.lang.NullPointerException
+	at Keywords.CommonKeywords.searchItem(CommonKeywords.java:495)
+	at TestCases.TS007_TodoScripts05.TS007_TodoScripts05_Todo4_searchTodoByContentFromTodoList(TS007_TodoScripts05.java:140)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1930792245", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1930792245'><pre>java.lang.NullPointerException
+	at Keywords.CommonKeywords.searchItem(CommonKeywords.java:495)
+	at TestCases.TS007_TodoScripts05.TS007_TodoScripts05_Todo4_searchTodoByContentFromTodoList(TS007_TodoScripts05.java:140)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:72)
+	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
+</pre></div></td>
+<td>112</td>
+<td>TestCases.TS007_TodoScripts05@4cc8eb05</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='TestCases.TS007_TodoScripts01.TS007_TodoScripts01_ToDo1_verifyToDoView()'><b>TS007_TodoScripts01_ToDo1_verifyToDoView</b><br>Test class: TestCases.TS007_TodoScripts01</td>
+<td></td>
+<td>65</td>
+<td>TestCases.TS007_TodoScripts01@503d687a</td></tr>
+<tr>
+<td title='TestCases.TS007_TodoScripts02.TS007_TodoScripts02_ToDo1_checkDefaultDurationSetting()'><b>TS007_TodoScripts02_ToDo1_checkDefaultDurationSetting</b><br>Test class: TestCases.TS007_TodoScripts02<br>Parameters: Set Default Duration: None, None</td>
+<td></td>
+<td>166</td>
+<td>TestCases.TS007_TodoScripts02@6a370f4</td></tr>
+<tr>
+<td title='TestCases.TS007_TodoScripts02.TS007_TodoScripts02_ToDo1_checkDefaultDurationSetting()'><b>TS007_TodoScripts02_ToDo1_checkDefaultDurationSetting</b><br>Test class: TestCases.TS007_TodoScripts02<br>Parameters: Set Default Duration: Medium, Medium</td>
+<td></td>
+<td>162</td>
+<td>TestCases.TS007_TodoScripts02@6a370f4</td></tr>
+<tr>
+<td title='TestCases.TS007_TodoScripts02.TS007_TodoScripts02_ToDo1_checkDefaultDurationSetting()'><b>TS007_TodoScripts02_ToDo1_checkDefaultDurationSetting</b><br>Test class: TestCases.TS007_TodoScripts02<br>Parameters: Set Default Duration: Long, Long</td>
+<td></td>
+<td>150</td>
+<td>TestCases.TS007_TodoScripts02@6a370f4</td></tr>
+<tr>
+<td title='TestCases.TS007_TodoScripts02.TS007_TodoScripts02_ToDo1_checkDefaultDurationSetting()'><b>TS007_TodoScripts02_ToDo1_checkDefaultDurationSetting</b><br>Test class: TestCases.TS007_TodoScripts02<br>Parameters: Set Default Duration: Short, Short</td>
+<td></td>
+<td>162</td>
+<td>TestCases.TS007_TodoScripts02@6a370f4</td></tr>
+<tr>
+<td title='TestCases.TS007_TodoScripts02.TS007_TodoScripts02_ToDo3_checkNewToDoDefaultStarDone()'><b>TS007_TodoScripts02_ToDo3_checkNewToDoDefaultStarDone</b><br>Test class: TestCases.TS007_TodoScripts02</td>
+<td></td>
+<td>102</td>
+<td>TestCases.TS007_TodoScripts02@6a370f4</td></tr>
+<tr>
+<td title='TestCases.TS007_TodoScripts02.TS007_TodoScripts02_ToDo4_checkNewToDoDefaultCollection()'><b>TS007_TodoScripts02_ToDo4_checkNewToDoDefaultCollection</b><br>Test class: TestCases.TS007_TodoScripts02</td>
+<td></td>
+<td>279</td>
+<td>TestCases.TS007_TodoScripts02@6a370f4</td></tr>
+<tr>
+<td title='TestCases.TS007_TodoScripts02.TS007_TodoScripts02_ToDo5_checkDefaultDueDateSetting()'><b>TS007_TodoScripts02_ToDo5_checkDefaultDueDateSetting</b><br>Test class: TestCases.TS007_TodoScripts02<br>Parameters: Set Default Due Date: None, None</td>
+<td></td>
+<td>66</td>
+<td>TestCases.TS007_TodoScripts02@6a370f4</td></tr>
+<tr>
+<td title='TestCases.TS007_TodoScripts02.TS007_TodoScripts02_ToDo5_checkDefaultDueDateSetting()'><b>TS007_TodoScripts02_ToDo5_checkDefaultDueDateSetting</b><br>Test class: TestCases.TS007_TodoScripts02<br>Parameters: Set Default Due Date: Tomorrow, Tomorrow</td>
+<td></td>
+<td>64</td>
+<td>TestCases.TS007_TodoScripts02@6a370f4</td></tr>
+<tr>
+<td title='TestCases.TS007_TodoScripts02.TS007_TodoScripts02_ToDo5_checkDefaultDueDateSetting()'><b>TS007_TodoScripts02_ToDo5_checkDefaultDueDateSetting</b><br>Test class: TestCases.TS007_TodoScripts02<br>Parameters: Set Default Due Date: End of Work Week, End of Work Week</td>
+<td></td>
+<td>62</td>
+<td>TestCases.TS007_TodoScripts02@6a370f4</td></tr>
+<tr>
+<td title='TestCases.TS007_TodoScripts02.TS007_TodoScripts02_ToDo5_checkDefaultDueDateSetting()'><b>TS007_TodoScripts02_ToDo5_checkDefaultDueDateSetting</b><br>Test class: TestCases.TS007_TodoScripts02<br>Parameters: Set Default Due Date: End of Month, End of Month</td>
+<td></td>
+<td>66</td>
+<td>TestCases.TS007_TodoScripts02@6a370f4</td></tr>
+<tr>
+<td title='TestCases.TS007_TodoScripts02.TS007_TodoScripts02_ToDo5_checkDefaultDueDateSetting()'><b>TS007_TodoScripts02_ToDo5_checkDefaultDueDateSetting</b><br>Test class: TestCases.TS007_TodoScripts02<br>Parameters: Set Default Due Date: Today, Today</td>
+<td></td>
+<td>75</td>
+<td>TestCases.TS007_TodoScripts02@6a370f4</td></tr>
+<tr>
+<td title='TestCases.TS007_TodoScripts02.TS007_TodoScripts02_ToDo6_checkDefaultDueDateAlertSetting()'><b>TS007_TodoScripts02_ToDo6_checkDefaultDueDateAlertSetting</b><br>Test class: TestCases.TS007_TodoScripts02<br>Parameters: Set Default Due Date Alert: None, None</td>
+<td></td>
+<td>78</td>
+<td>TestCases.TS007_TodoScripts02@6a370f4</td></tr>
+<tr>
+<td title='TestCases.TS007_TodoScripts02.TS007_TodoScripts02_ToDo6_checkDefaultDueDateAlertSetting()'><b>TS007_TodoScripts02_ToDo6_checkDefaultDueDateAlertSetting</b><br>Test class: TestCases.TS007_TodoScripts02<br>Parameters: Set Default Due Date Alert: 1 Day Before, 1 Day Before</td>
+<td></td>
+<td>77</td>
+<td>TestCases.TS007_TodoScripts02@6a370f4</td></tr>
+<tr>
+<td title='TestCases.TS007_TodoScripts02.TS007_TodoScripts02_ToDo6_checkDefaultDueDateAlertSetting()'><b>TS007_TodoScripts02_ToDo6_checkDefaultDueDateAlertSetting</b><br>Test class: TestCases.TS007_TodoScripts02<br>Parameters: Set Default Due Date Alert: 2 Days Before, 2 Days Before</td>
+<td></td>
+<td>71</td>
+<td>TestCases.TS007_TodoScripts02@6a370f4</td></tr>
+<tr>
+<td title='TestCases.TS007_TodoScripts02.TS007_TodoScripts02_ToDo6_checkDefaultDueDateAlertSetting()'><b>TS007_TodoScripts02_ToDo6_checkDefaultDueDateAlertSetting</b><br>Test class: TestCases.TS007_TodoScripts02<br>Parameters: Set Default Due Date Alert: 3 Days Before, 3 Days Before</td>
+<td></td>
+<td>64</td>
+<td>TestCases.TS007_TodoScripts02@6a370f4</td></tr>
+<tr>
+<td title='TestCases.TS007_TodoScripts02.TS007_TodoScripts02_ToDo6_checkDefaultDueDateAlertSetting()'><b>TS007_TodoScripts02_ToDo6_checkDefaultDueDateAlertSetting</b><br>Test class: TestCases.TS007_TodoScripts02<br>Parameters: Set Default Due Date Alert: 7 Days Before, 7 Days Before</td>
+<td></td>
+<td>69</td>
+<td>TestCases.TS007_TodoScripts02@6a370f4</td></tr>
+<tr>
+<td title='TestCases.TS007_TodoScripts02.TS007_TodoScripts02_ToDo6_checkDefaultDueDateAlertSetting()'><b>TS007_TodoScripts02_ToDo6_checkDefaultDueDateAlertSetting</b><br>Test class: TestCases.TS007_TodoScripts02<br>Parameters: Set Default Due Date Alert: 1 Month Before, 1 Month Before</td>
+<td></td>
+<td>73</td>
+<td>TestCases.TS007_TodoScripts02@6a370f4</td></tr>
+<tr>
+<td title='TestCases.TS007_TodoScripts02.TS007_TodoScripts02_ToDo6_checkDefaultDueDateAlertSetting()'><b>TS007_TodoScripts02_ToDo6_checkDefaultDueDateAlertSetting</b><br>Test class: TestCases.TS007_TodoScripts02<br>Parameters: Set Default Due Date Alert: On Due Date, On Due Date</td>
+<td></td>
+<td>69</td>
+<td>TestCases.TS007_TodoScripts02@6a370f4</td></tr>
+<tr>
+<td title='TestCases.TS007_TodoScripts03.TS007_TodoScripts03_ToDo1_quickAddStarToDo()'><b>TS007_TodoScripts03_ToDo1_quickAddStarToDo</b><br>Test class: TestCases.TS007_TodoScripts03</td>
+<td></td>
+<td>67</td>
+<td>TestCases.TS007_TodoScripts03@2abf4075</td></tr>
+<tr>
+<td title='TestCases.TS007_TodoScripts03.TS007_TodoScripts03_ToDo2_quickAddDoneToDo()'><b>TS007_TodoScripts03_ToDo2_quickAddDoneToDo</b><br>Test class: TestCases.TS007_TodoScripts03</td>
+<td></td>
+<td>53</td>
+<td>TestCases.TS007_TodoScripts03@2abf4075</td></tr>
+<tr>
+<td title='TestCases.TS007_TodoScripts03.TS007_TodoScripts03_ToDo3_quickAddDueToDo()'><b>TS007_TodoScripts03_ToDo3_quickAddDueToDo</b><br>Test class: TestCases.TS007_TodoScripts03<br>Parameters: Quick add todo with due date: 3 Days, TodoScripts03_Due 2, Due, In 3 days, 3.0</td>
+<td></td>
+<td>61</td>
+<td>TestCases.TS007_TodoScripts03@2abf4075</td></tr>
+<tr>
+<td title='TestCases.TS007_TodoScripts03.TS007_TodoScripts03_ToDo3_quickAddDueToDo()'><b>TS007_TodoScripts03_ToDo3_quickAddDueToDo</b><br>Test class: TestCases.TS007_TodoScripts03<br>Parameters: Quick add todo with due date: 10 Days, TodoScripts03_Due 3, Due, In 10 days, 10.0</td>
+<td></td>
+<td>79</td>
+<td>TestCases.TS007_TodoScripts03@2abf4075</td></tr>
+<tr>
+<td title='TestCases.TS007_TodoScripts03.TS007_TodoScripts03_ToDo3_quickAddDueToDo()'><b>TS007_TodoScripts03_ToDo3_quickAddDueToDo</b><br>Test class: TestCases.TS007_TodoScripts03<br>Parameters: Quick add todo with due date: 30 Days, TodoScripts03_Due 4, Due, In 30 days, 30.0</td>
+<td></td>
+<td>99</td>
+<td>TestCases.TS007_TodoScripts03@2abf4075</td></tr>
+<tr>
+<td title='TestCases.TS007_TodoScripts03.TS007_TodoScripts03_ToDo3_quickAddDueToDo()'><b>TS007_TodoScripts03_ToDo3_quickAddDueToDo</b><br>Test class: TestCases.TS007_TodoScripts03<br>Parameters: Quick add todo with due date: Today, TodoScripts03_Due 1, Due, Today, 0.0</td>
+<td></td>
+<td>117</td>
+<td>TestCases.TS007_TodoScripts03@2abf4075</td></tr>
+<tr>
+<td title='TestCases.TS007_TodoScripts03.TS007_TodoScripts03_ToDo4_showAllTodoWithFilterByAll()'><b>TS007_TodoScripts03_ToDo4_showAllTodoWithFilterByAll</b><br>Test class: TestCases.TS007_TodoScripts03</td>
+<td></td>
+<td>183</td>
+<td>TestCases.TS007_TodoScripts03@2abf4075</td></tr>
+<tr>
+<td title='TestCases.TS007_TodoScripts03.TS007_TodoScripts03_ToDo5_showStarTodoWithFilterByStar()'><b>TS007_TodoScripts03_ToDo5_showStarTodoWithFilterByStar</b><br>Test class: TestCases.TS007_TodoScripts03</td>
+<td></td>
+<td>71</td>
+<td>TestCases.TS007_TodoScripts03@2abf4075</td></tr>
+<tr>
+<td title='TestCases.TS007_TodoScripts03.TS007_TodoScripts03_ToDo6_showDoneTodoWithFilterByDone()'><b>TS007_TodoScripts03_ToDo6_showDoneTodoWithFilterByDone</b><br>Test class: TestCases.TS007_TodoScripts03</td>
+<td></td>
+<td>54</td>
+<td>TestCases.TS007_TodoScripts03@2abf4075</td></tr>
+<tr>
+<td title='TestCases.TS007_TodoScripts03.TS007_TodoScripts03_ToDo7_addOverDueToDo()'><b>TS007_TodoScripts03_ToDo7_addOverDueToDo</b><br>Test class: TestCases.TS007_TodoScripts03</td>
+<td></td>
+<td>323</td>
+<td>TestCases.TS007_TodoScripts03@2abf4075</td></tr>
+<tr>
+<td title='TestCases.TS007_TodoScripts03.TS007_TodoScripts03_ToDo8_showDueTodoWithFilterByDue()'><b>TS007_TodoScripts03_ToDo8_showDueTodoWithFilterByDue</b><br>Test class: TestCases.TS007_TodoScripts03</td>
+<td></td>
+<td>75</td>
+<td>TestCases.TS007_TodoScripts03@2abf4075</td></tr>
+<tr>
+<td title='TestCases.TS007_TodoScripts04.TS007_TodoScripts04_ToDo01_createEmailBySwiping()'><b>TS007_TodoScripts04_ToDo01_createEmailBySwiping</b><br>Test class: TestCases.TS007_TodoScripts04</td>
+<td></td>
+<td>254</td>
+<td>TestCases.TS007_TodoScripts04@770d3326</td></tr>
+<tr>
+<td title='TestCases.TS007_TodoScripts04.TS007_TodoScripts04_ToDo02_createNoteBySwiping()'><b>TS007_TodoScripts04_ToDo02_createNoteBySwiping</b><br>Test class: TestCases.TS007_TodoScripts04</td>
+<td></td>
+<td>155</td>
+<td>TestCases.TS007_TodoScripts04@770d3326</td></tr>
+<tr>
+<td title='TestCases.TS007_TodoScripts04.TS007_TodoScripts04_ToDo03_moveCollectionBySwiping()'><b>TS007_TodoScripts04_ToDo03_moveCollectionBySwiping</b><br>Test class: TestCases.TS007_TodoScripts04</td>
+<td></td>
+<td>49</td>
+<td>TestCases.TS007_TodoScripts04@770d3326</td></tr>
+<tr>
+<td title='TestCases.TS007_TodoScripts04.TS007_TodoScripts04_ToDo04_addCollectionBySwiping()'><b>TS007_TodoScripts04_ToDo04_addCollectionBySwiping</b><br>Test class: TestCases.TS007_TodoScripts04</td>
+<td></td>
+<td>100</td>
+<td>TestCases.TS007_TodoScripts04@770d3326</td></tr>
+<tr>
+<td title='TestCases.TS007_TodoScripts04.TS007_TodoScripts04_ToDo05_addTodoWithChecklist()'><b>TS007_TodoScripts04_ToDo05_addTodoWithChecklist</b><br>Test class: TestCases.TS007_TodoScripts04</td>
+<td></td>
+<td>105</td>
+<td>TestCases.TS007_TodoScripts04@770d3326</td></tr>
+<tr>
+<td title='TestCases.TS007_TodoScripts04.TS007_TodoScripts04_ToDo06_removeChecklistOfToDo()'><b>TS007_TodoScripts04_ToDo06_removeChecklistOfToDo</b><br>Test class: TestCases.TS007_TodoScripts04</td>
+<td></td>
+<td>86</td>
+<td>TestCases.TS007_TodoScripts04@770d3326</td></tr>
+<tr>
+<td title='TestCases.TS007_TodoScripts04.TS007_TodoScripts04_ToDo07_addFullToDo()'><b>TS007_TodoScripts04_ToDo07_addFullToDo</b><br>Test class: TestCases.TS007_TodoScripts04</td>
+<td></td>
+<td>233</td>
+<td>TestCases.TS007_TodoScripts04@770d3326</td></tr>
+<tr>
+<td title='TestCases.TS007_TodoScripts04.TS007_TodoScripts04_ToDo08_sendEmailFromDetail()'><b>TS007_TodoScripts04_ToDo08_sendEmailFromDetail</b><br>Test class: TestCases.TS007_TodoScripts04</td>
+<td></td>
+<td>255</td>
+<td>TestCases.TS007_TodoScripts04@770d3326</td></tr>
+<tr>
+<td title='TestCases.TS007_TodoScripts04.TS007_TodoScripts04_ToDo09_createNoteFromDetail()'><b>TS007_TodoScripts04_ToDo09_createNoteFromDetail</b><br>Test class: TestCases.TS007_TodoScripts04</td>
+<td></td>
+<td>166</td>
+<td>TestCases.TS007_TodoScripts04@770d3326</td></tr>
+<tr>
+<td title='TestCases.TS007_TodoScripts04.TS007_TodoScripts04_ToDo10_checkLinkedIconIsRemoved()'><b>TS007_TodoScripts04_ToDo10_checkLinkedIconIsRemoved</b><br>Test class: TestCases.TS007_TodoScripts04</td>
+<td></td>
+<td>145</td>
+<td>TestCases.TS007_TodoScripts04@770d3326</td></tr>
+<tr>
+<td title='TestCases.TS007_TodoScripts05.TS007_TodoScripts05_ToDo1_setUnStarTodoFromTodoListView()'><b>TS007_TodoScripts05_ToDo1_setUnStarTodoFromTodoListView</b><br>Test class: TestCases.TS007_TodoScripts05</td>
+<td></td>
+<td>95</td>
+<td>TestCases.TS007_TodoScripts05@4cc8eb05</td></tr>
+<tr>
+<td title='TestCases.TS007_TodoScripts05.TS007_TodoScripts05_Todo2_deleteToDoFromTodoViewDetail()'><b>TS007_TodoScripts05_Todo2_deleteToDoFromTodoViewDetail</b><br>Test class: TestCases.TS007_TodoScripts05</td>
+<td></td>
+<td>115</td>
+<td>TestCases.TS007_TodoScripts05@4cc8eb05</td></tr>
+<tr>
+<td title='TestCases.TS007_TodoScripts05.TS007_TodoScripts05_Todo3_searchTodoByTitleFromTodoList()'><b>TS007_TodoScripts05_Todo3_searchTodoByTitleFromTodoList</b><br>Test class: TestCases.TS007_TodoScripts05</td>
+<td></td>
+<td>113</td>
+<td>TestCases.TS007_TodoScripts05@4cc8eb05</td></tr>
+<tr>
+<td title='TestCases.TS007_TodoScripts05.TS007_TodoScripts05_Todo5_searchTodoFromTodoListWithWrongKeyword()'><b>TS007_TodoScripts05_Todo5_searchTodoFromTodoListWithWrongKeyword</b><br>Test class: TestCases.TS007_TodoScripts05</td>
+<td></td>
+<td>149</td>
+<td>TestCases.TS007_TodoScripts05@4cc8eb05</td></tr>
+</table><p>
+</body>
+</html>
